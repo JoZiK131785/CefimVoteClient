@@ -1,0 +1,11 @@
+.container-forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.title-page {
+    text-align: center;
+    margin-block: 80px;
+}

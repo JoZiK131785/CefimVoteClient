@@ -1,6 +1,6 @@
 import './reset.css';
 import './index.css';
-import './app.css';
+import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import socketIO from 'socket.io-client';
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home socket={ socket } />}></Route>
+      <Route path="/" element={<Home socket={socket} />}></Route>
     </Routes>
   );
 }

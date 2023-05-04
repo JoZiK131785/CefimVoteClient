@@ -1,1 +1,24 @@
-/* lalala */
+.main-header {
+    background-color: var(--orange);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+}
+
+.img-logo {
+    width: 260px;
+    height: auto;
+}
+
+.title-logo {
+    color: var(--white);
+}

@@ -1,13 +1,109 @@
 :root {
-    /* COLOR */
-    --color-black : #000000;
-    --color-black-shadow : rgba(0, 0, 0, .5);
-    --color-white : #ffffff;
-    --color-white-shadow : rgba(255, 255, 255, 0.5);
+  /* COLOR */
+  --orange: #FD7E37;
+  --dark-grey: #333333;
+  --grey: #666666;
+  --light-grey: #CCCCCC;
+  --white: #FFF;
 }
 
 /* #region ##### FONTS ##### */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+    url('../src/assets/fonts/montserrat-v25-latin-regular.woff') format('woff');
+}
 
-  
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../src/assets/fonts/montserrat-v25-latin-italic.woff2') format('woff2'),
+    url('../src/assets/fonts/montserrat-v25-latin-italic.woff') format('woff');
+}
 
-  /* #endregion */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../src/assets/fonts/montserrat-v25-latin-500.woff2') format('woff2'),
+    url('../src/assets/fonts/montserrat-v25-latin-500.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../src/assets/fonts/montserrat-v25-latin-500italic.woff2') format('woff2'),
+    url('../src/assets/fonts/montserrat-v25-latin-500italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../src/assets/fonts/montserrat-v25-latin-700.woff2') format('woff2'),
+    url('../src/assets/fonts/montserrat-v25-latin-700.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../src/assets/fonts/montserrat-v25-latin-700italic.woff2') format('woff2'),
+    url('../src/assets/fonts/montserrat-v25-latin-700italic.woff') format('woff');
+}
+
+
+
+/* #endregion */
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: var(--dark-grey);
+}
+
+h1 {
+  font-weight: 700;
+  color: var(--orange);
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 700;
+  color: var(--orange);
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+}
+
+b {
+  font-weight: 700;
+}
+
+label {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: var(--dark-grey);
+  font-size: 20px;
+}
+
+input {
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: var(--grey);
+}

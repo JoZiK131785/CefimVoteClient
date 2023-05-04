@@ -1,0 +1,25 @@
+.form-log {
+    width: 540px;
+    padding-inline: 30px;
+    padding-block: 35px 30px;
+    border: solid 3px var(--orange);
+    border-radius: 25px;
+}
+
+.title-form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-input input {
+    margin-top: 10px;
+    display: block;
+}
+
+.form-input {
+    margin-bottom: 42px;
+}
+
+.form-button {
+    text-align: end;
+}
