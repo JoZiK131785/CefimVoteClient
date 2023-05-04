@@ -1,4 +1,5 @@
 import Header from '../Header';
+import FormLog from '../FormLog';
 import './index.css';
 import React, { useState, useEffect } from 'react';
 
@@ -28,6 +29,29 @@ const Home = ({ socket }) => {
 
         <>
             <Header />
+
+            <section className="section-form">
+
+                <h1 className="title-page">Connexion</h1>
+
+                <div className="container-forms">
+                    <FormLog
+                        title="En tant qu'administrateur.ice :" labelOne="Nom d'administrateur.ice :" labelTwo="Mot de passe :"
+                        placeholderOne="Carmen Blabla"
+                        placeholderTwo="...."
+                        type="password"
+                        value="Se connecter"
+                    />
+
+                    <FormLog
+                        title="En tant qu'utilisateur.ice :" labelOne="Nom prénom :"
+                        placeholderOne="Carmen Blabla" labelTwo="Code de session :"
+                        placeholderTwo="...."
+                        type="text"
+                        value="Se connecter"
+                    />
+                </div>
+            </section>
 
         </>
     );

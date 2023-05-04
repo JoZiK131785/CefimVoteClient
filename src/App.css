@@ -65,10 +65,45 @@
 
 body {
   font-family: 'Montserrat';
+  font-weight: 400;
+  color: var(--dark-grey);
 }
 
 h1 {
   font-weight: 700;
   color: var(--orange);
   font-size: 40px;
+}
+
+h2 {
+  font-weight: 700;
+  color: var(--orange);
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+}
+
+b {
+  font-weight: 700;
+}
+
+label {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: var(--dark-grey);
+  font-size: 20px;
+}
+
+input {
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: var(--grey);
 }
