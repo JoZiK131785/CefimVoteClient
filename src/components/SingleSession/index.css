@@ -1,0 +1,19 @@
+.set-titles {
+    text-align: center;
+    margin-block: 35px;
+}
+
+.set-titles h2 {
+    color: var(--dark-grey);
+    font-weight: 400;
+}
+
+.container-lists {
+    padding-inline: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.p-infos {
+    margin-bottom: 5px;
+}
