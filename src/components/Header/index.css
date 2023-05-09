@@ -1,6 +1,6 @@
 .main-header {
     background-color: var(--orange);
-    padding: 20px 30px;
+    padding: 10px 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

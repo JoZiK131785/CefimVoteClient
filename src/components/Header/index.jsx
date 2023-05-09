@@ -1,7 +1,7 @@
 import "./index.css";
 import LogoCEFIM from "../../assets/img/logo-blanc.webp";
 
-const Header = () => {
+const Header = ({ role }) => {
     return (
         <header className="main-header">
             <div className="container-logo">
@@ -10,7 +10,7 @@ const Header = () => {
                 <h1 className="title-logo">Vote</h1>
             </div>
 
-            {/* <h1 className="title-logo">{ici en props si c'est un.e admin ou un.e votant.e}</h1> */}
+            <h1 className="title-logo">{role}</h1>
         </header>
     )
 }

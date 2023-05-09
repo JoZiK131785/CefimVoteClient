@@ -1,0 +1,8 @@
+.input-signe {
+    border: 2px solid var(--grey);
+    width: 100%;
+    border-radius: 25px;
+    height: 200px;
+    touch-action: none;
+    margin-top: 10px;
+}

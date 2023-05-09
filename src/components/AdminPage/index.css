@@ -1,0 +1,40 @@
+.container-section-admin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* height: 100%; */
+    padding-bottom: 50px;
+}
+
+.section-admin-one {
+    border-right: 4px solid var(--orange);
+}
+
+.title-admin {
+    text-align: center;
+    margin-block: 35px;
+}
+
+.container-list-session {
+    display: grid;
+    place-items: center;
+}
+
+.list-sessions {
+    list-style: "●";
+    list-style-position: outside;
+}
+
+.session::marker {
+    color: var(--orange);
+    padding-right: 5px;
+    font-size: 25px;
+}
+
+.p-session-link {
+    color: var(--orange);
+    margin-left: 10px;
+}
+
+.p-session {
+    margin-left: 10px;
+}

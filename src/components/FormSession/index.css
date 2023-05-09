@@ -1,0 +1,7 @@
+.form-label {
+    padding-inline: 120px;
+}
+
+.form-label .form-input input {
+    width: 100%;
+}
