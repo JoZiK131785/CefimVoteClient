@@ -2,9 +2,9 @@ import "./index.css";
 
 // We can add "disabled" on the button
 
-const MainButton = ({ value }) => {
+const MainButton = ({ value, toggle }) => {
     return (
-        <button className="main-button">
+        <button className="main-button" onClick={toggle}>    
             {value}
         </button>
     )

@@ -17,7 +17,7 @@ const FormLog = ({ title, labelOne, labelTwo, placeholderOne, placeholderTwo, ty
     };
 
     return (
-      
+    
         <form action="submit" className="form-log" onSubmit={handleSubmit}>
             <h2 className="title-form">
                 {title}
@@ -26,14 +26,14 @@ const FormLog = ({ title, labelOne, labelTwo, placeholderOne, placeholderTwo, ty
             <div className="form-input first-input">
                 <label htmlFor="name">{labelOne}</label>
                 <input type="text" name="name" placeholder={placeholderOne} ref={firstInput} />
-                  
+                
             </div>
 
             <div className="form-input secondary-input">
                 <label htmlFor="name">{labelTwo}</label>
 
                 <input type={type} name="name" placeholder={placeholderTwo} ref={secondInput} />
-                  
+                
             </div>
 
             <div className="form-button">
