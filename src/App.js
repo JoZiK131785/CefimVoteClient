@@ -14,7 +14,7 @@ import OldSessionPage from './components/OldSessionPage';
 
 import socketIO from 'socket.io-client';
 
-const socket = socketIO.connect('http://192.168.85.1:4000');
+const socket = socketIO.connect('https://192.168.85.1:4000');
 
 function App() {
 
