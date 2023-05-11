@@ -1,3 +1,5 @@
+// #region IMPORTS
+
 import "./index.css";
 
 import Header from "../Header";
@@ -5,13 +7,34 @@ import FormSession from "../FormSession";
 
 import { Link } from "react-router-dom";
 
+// #endregion
+
+const AdminPage = ({ socket }) => {
+
+    // #region ######################## TAF ###############################
+
+    
+    // RECUPERER l'historique des sessions & Mapper sur le li + faire de la pagination
 
 
-const AdminPage = () => {
-    // Mapper sur le li + faire de la pagination
+    // #endregion
+
+    // #region INIT
+
+    const [userName, setUsername] = useState("");
+
+    // #endregion
+    // #region FUNCTIONS
+
+    useEffect(() => {
+        setUsername(localStorage.getItem("userName"))
+    }, [])
+
+    // #endregion
+    // #region RETURN
     return (
         <>
-            <Header role="administrateur.ice" />
+            <Header role={ userName } />
 
             <div className="container-section-admin">
                 <section className="section-admin section-admin-one">
@@ -19,7 +42,7 @@ const AdminPage = () => {
                         Nouvelle session
                     </h1>
 
-                    <FormSession value="Créer la session" />
+                    <FormSession socket={socket} value="Créer la session" username={userName} />
                 </section>
 
 
@@ -46,6 +69,8 @@ const AdminPage = () => {
             </div>
         </>
     )
+
+    // #endregion
 }
 
 export default AdminPage;

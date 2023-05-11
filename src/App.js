@@ -20,22 +20,19 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home />}></Route>
+      {/* <Route path="/" element={<Home />}></Route>
       <Route path="/admin" element={<AdminPage />}></Route>
       <Route path="/waiting" element={<WaitingPage />}></Route>
       <Route path="/session" element={<SingleSession />}></Route>
       <Route path="/vote" element={<VotePage />}></Route>
       <Route path="/result" element={<ResultPage />}></Route>
-      <Route path="/sessions" element={<OldSessionPage />}></Route>
+      <Route path="/sessions" element={<OldSessionPage />}></Route>*/}
 
-      {/* <Route path="/" element={<Home socket={socket} />}></Route>
+      <Route path="/" element={<Home socket={socket} />}></Route>
       <Route path="/admin" element={<AdminPage socket={socket} />}></Route>
       <Route path="/waiting" element={<WaitingPage socket={socket} />}></Route>
       <Route path="/session" element={<SingleSession socket={socket} />}></Route> 
-      <Route path="/session" element={<VotePage socket={socket} />}></Route>
-      */}
-
-      {/* <Route path="/session/:id" element={<SingleSession socket={socket} />}></Route> */}
+      <Route path="/vote" element={<VotePage socket={socket} />}></Route>
     </Routes>
   );
 }

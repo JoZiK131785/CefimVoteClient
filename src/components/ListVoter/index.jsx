@@ -1,24 +1,30 @@
 import './index.css';
+import { useState, useEffect } from 'react';
 
-// Mapper sur le li
-const ListVoter = () => {
+const ListVoter = ({ session }) => {
+
+    const [voters, setVoters] = useState([]);
+
+    useEffect(() => {
+        setVoters(session.voters);
+    }, [session])
+
     return (
         <div className="container-list-voter">
             <h2 className="subtitle">Listes des participant.e.s</h2>
 
             <ul className="list-voter">
-                {/* mapper sur le li */}
-                <li className="voter">
-                    <p className="p-voter">
-                        Quentin DeMaria
-                    </p>
-                </li>
 
-                <li className="voter">
-                    <p className="p-voter">
-                        Clément Bournas
-                    </p>
-                </li>
+                {voters && voters.map((voter, index) => {
+                    return (
+                        <li className="voter" key={index}>
+                            <p className="p-voter">
+                                { voter.userName }
+                            </p>
+                        </li>
+                    )
+                })}
+
             </ul>
         </div>
     )
