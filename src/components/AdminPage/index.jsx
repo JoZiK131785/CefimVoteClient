@@ -1,12 +1,14 @@
 import "./index.css";
-import { Link } from "react-router-dom";
+
 import Header from "../Header";
 import FormSession from "../FormSession";
 
+import { Link } from "react-router-dom";
+
+
+
 const AdminPage = () => {
     // Mapper sur le li + faire de la pagination
-
-
     return (
         <>
             <Header role="administrateur.ice" />

@@ -93,6 +93,16 @@ b {
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+  color: var(--orange);
+  transition: 200ms;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 label {
   font-family: 'Montserrat';
   font-weight: 400;
@@ -106,4 +116,14 @@ input {
   border-radius: 25px;
   border-style: solid;
   border-color: var(--grey);
+}
+
+select {
+  display: block;
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: var(--grey);
+  width: 100%;
 }

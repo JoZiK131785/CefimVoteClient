@@ -1,7 +1,12 @@
 import "./index.css"
+
 import Header from "../Header"
 import ListVoter from "../ListVoter"
 import ListInfos from "../ListInfos"
+import FormDuo from "../FormDuo"
+
+
+
 
 const SingleSession = () => {
     return (
@@ -18,6 +23,16 @@ const SingleSession = () => {
                 <div className="container-lists">
                     <ListInfos />
                     <ListVoter />
+                    <FormDuo />
+
+                    <div className="list-duo">
+                        <h2 className="subtitle">
+                            Listes des duos
+                        </h2>
+
+
+                    </div>
+
                 </div>
             </section>
 

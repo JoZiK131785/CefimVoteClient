@@ -1,0 +1,26 @@
+.lists-results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-action-session {
+    margin-block: 120px 40px;
+    padding-inline: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.action-session {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-session img {
+    width: 20px;
+    height: auto;
+}
