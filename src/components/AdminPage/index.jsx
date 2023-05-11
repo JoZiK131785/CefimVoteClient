@@ -6,7 +6,6 @@ import Header from "../Header";
 import FormSession from "../FormSession";
 
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 // #endregion
 
@@ -33,7 +32,6 @@ const AdminPage = ({ socket }) => {
 
     // #endregion
     // #region RETURN
-
     return (
         <>
             <Header role={ userName } />

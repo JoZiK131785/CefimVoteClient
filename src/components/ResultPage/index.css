@@ -1,0 +1,8 @@
+.section-result {
+    padding-inline: 120px;
+}
+
+.container-results-turns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

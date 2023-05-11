@@ -1,0 +1,14 @@
+.form-vote {
+    width: auto;
+}
+
+.form-vote-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: auto;
+}
+
+.form-vote-container .title-form {
+    text-align: left;
+}

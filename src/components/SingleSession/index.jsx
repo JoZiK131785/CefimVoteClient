@@ -5,6 +5,10 @@ import "./index.css"
 import Header from "../Header"
 import ListVoter from "../ListVoter"
 import ListInfos from "../ListInfos"
+import FormDuo from "../FormDuo"
+
+
+
 
 import { useState, useEffect } from "react"
 import { formatDate } from "../../utils/functions"
@@ -54,6 +58,13 @@ const SingleSession = ({ socket }) => {
                 <div className="container-lists">
                     <ListInfos session={ session } />
                     <ListVoter session={ session } />
+                    <FormDuo />
+
+                    <div className="list-duo">
+                        <h2 className="subtitle">
+                            Listes des duos
+                        </h2>
+                    </div>
                 </div>
             </section>
 
