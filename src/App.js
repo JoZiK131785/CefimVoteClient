@@ -12,9 +12,9 @@ import VotePage from './components/VotePage';
 import ResultPage from './components/ResultPage';
 import OldSessionPage from './components/OldSessionPage';
 
-// import socketIO from 'socket.io-client';
+import socketIO from 'socket.io-client';
 
-// const socket = socketIO.connect('http://localhost:4000');
+const socket = socketIO.connect('http://localhost:4000');
 
 function App() {
 
@@ -33,6 +33,8 @@ function App() {
       <Route path="/waiting" element={<WaitingPage socket={socket} />}></Route>
       <Route path="/session" element={<SingleSession socket={socket} />}></Route> 
       <Route path="/vote" element={<VotePage socket={socket} />}></Route>
+      <Route path="/result" element={<ResultPage socket={socket} />}></Route>
+      <Route path="/sessions" element={<OldSessionPage socket={socket} />}></Route>
     </Routes>
   );
 }
